@@ -43,6 +43,7 @@
 	
 	<script>var queryForm=function(e){var t=!(!e||!e.reset)&&e.reset,n=window.location.toString().split("?");if(n.length>1){var o=n[1].split("&");for(s in o){var r=o[s].split("=");(t||null===sessionStorage.getItem(r[0]))&&sessionStorage.setItem(r[0],decodeURIComponent(r[1]))}}};queryForm();</script>
 
+
     <?php wp_head(); ?>
 	
     <!-- Yandex.Metrika counter -->
@@ -101,7 +102,7 @@ wp_body_open();
         <div class="topLine__sale">
             <span>Скидка</span>
             <b>30%</b>
-            <span>На заказ с 10.00 до 19.00</span>
+            <span>На заказ с 10.00 до 21.00</span>
         </div>
         <div class="topLine__worktime"><?php the_field('vremya_raboty', 'options'); ?> <span> </span> БЕЗ ВЫХОДНЫХ</div>
         <!-- <div class="topLine__worktime">Работаем без выходных</div> -->

@@ -13,6 +13,8 @@ get_header(); ?>
                 <div class="main__wrap">
 
                     <?php get_template_part( 'template-parts/price' ); ?>
+                    
+                    <?php get_template_part( 'template-parts/text-blk' ); ?>
 
                     <?php get_template_part( 'template-parts/rek' ); ?>
 

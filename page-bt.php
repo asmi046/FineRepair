@@ -14,6 +14,8 @@ get_header(); ?>
 
                     <?php get_template_part( 'template-parts/price' ); ?>
 
+                    <?php get_template_part( 'template-parts/text-blk' ); ?>
+                    
                     <?php get_template_part( 'template-parts/rek' ); ?>
 
                     <?php get_template_part( 'template-parts/barnds' ); ?>

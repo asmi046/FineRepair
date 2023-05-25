@@ -1,0 +1,52 @@
+.main__textblk {
+    
+}
+
+.mainText {
+    width:100%;
+    height: 500px;
+    overflow: hidden;    
+    position: relative;
+}
+
+.mainText::after { 
+    content: "";
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(hsla(0,0%,100%,0),#fff);
+    z-index: 10;
+}
+
+
+.mainText.shoved {
+    height: auto;
+} 
+
+.mainText.shoved::after { 
+    content: "";
+    background:none;
+}
+
+.mainText p{
+    margin:  1em 0;
+}
+
+
+.hide_show_panel {
+    width: 100%;
+    display: flex;
+}
+
+.hide_show_panel a{ 
+    margin: 0 auto;
+    border: 2px solid #f0a366;
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
+.hide_show_panel a:hover{ 
+    background-color: #f0a366;
+    color: white;
+}
