@@ -297,6 +297,21 @@ input[type="radio"]:focus {
     margin: 0px auto;
 }
 
+.map_pin {
+    position: relative;
+    padding-left: 25px!important;
+}
+
+.map_pin::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    background: url(images/pin.svg);
+}
+
 @media (max-width: 1180px) {
     .wrap {
         max-width: 990px;

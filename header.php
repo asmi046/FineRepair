@@ -98,7 +98,7 @@ wp_body_open();
 </section>
 <section class="topLine">
     <div class="topLine__wrap wrap flex flex--aistr flex--jcsb">
-        <div class="topLine__text">Ремонт бытовой техники</div>
+        <div class="topLine__text map_pin">Москва и Подмосковье</div>
         <div class="topLine__sale">
             <span>Скидка</span>
             <b>30%</b>
