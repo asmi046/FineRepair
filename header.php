@@ -224,9 +224,11 @@ wp_body_open();
 <section class="menu">
     <div class="menu__wrap wrap">
         <div class="menu__list flex flex--aic flex--jcsb">
-            <div class="menu__item menu__item--first">
+            <!-- <div class="menu__item menu__item--first">
                 <span>Что требуется починить?</span>
-            </div>
+            </div> -->
+
+
             <div class="menu__item">
                 <a href="/remont-stiralnyh-mashin/" class="menu__link flex flex--aic flex--jcs">
                     <span class="menu__text">Стиральная машина</span>
@@ -320,6 +322,11 @@ wp_body_open();
                     </ul>
                 </div>
             </div>
+
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667" ] ); ?>
+            
             <div class="menu__item mobile__menu">
                 <a href="/prices" class="menu__link flex flex--aic flex--jcs">
                     <span class="menu__text">Цены</span>

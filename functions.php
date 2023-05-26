@@ -427,6 +427,7 @@ add_action( 'customize_controls_enqueue_scripts', 'twentytwenty_customize_contro
 function all_scripts() {
     $theme_version = wp_get_theme()->get( 'Version' );
     
+    wp_enqueue_style( 'saitemap-style', get_template_directory_uri() . '/assets/css/site-map.css', array(), $theme_version, 'all' );
     wp_enqueue_style( 'text-style', get_template_directory_uri() . '/assets/css/text-blk.css', array(), $theme_version, 'all' );
 }
 

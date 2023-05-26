@@ -1275,8 +1275,9 @@ input[type="radio"]:focus {
 .menu__text {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Jost";
+
 }
 
 @media (max-width: 1180px) {
@@ -4256,10 +4257,10 @@ input[type="radio"]:focus {
 
 .mainPrices__list tr td {
     border-bottom: 1px solid #c4c4c4;
-    padding: 24px 0px;
+    padding: 14px 0px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 @media (max-width: 1180px) {
@@ -4290,7 +4291,7 @@ input[type="radio"]:focus {
     text-align: center;
     font-family: "Bitter";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     text-align: right;
 }
 

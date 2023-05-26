@@ -33,6 +33,27 @@
     margin:  1em 0;
 }
 
+.mainText ul{
+    margin: 1em 0;
+    list-style: none;
+}
+
+
+.mainText ul li{
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.mainText ul li:before{
+    content: ""; 
+    position: absolute;
+    width:7px;
+    height:7px;
+    background-color: #f0a366;
+    left: 0;
+    top: 8px;
+}
 
 .hide_show_panel {
     width: 100%;
