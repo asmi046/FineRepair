@@ -1,6 +1,11 @@
 <div class="main__brands">
     <section class="mainBrands">
         <div class="mainBrands__title Title">
+
+            <?php 
+                $bt_name = "";
+            ?>
+
             <h2 class="Title__text">Починим бытовую технику <span>любого бренда</span></h2>
             <span>Любая модель по плечу!</span>
         </div>
@@ -66,6 +71,87 @@
                 $queryArr = array(
                     'post_type' => 'page',
                     'post_parent' => 22,
+                    'posts_per_page' => -1,
+                    'meta_query' 		=> array(
+                        "template" 	=> array(
+                            "key" 	=> "_wp_page_template",
+                            "value" => "page-brand.php"
+                        ),
+                    ),
+                );
+                $stati_children = new WP_Query( $queryArr );
+                if($stati_children->have_posts()) :
+                    while($stati_children->have_posts()): $stati_children->the_post();?>
+                        <div class="mainBrands__item">
+                            <a href="<?= get_the_permalink() ?>">
+                                <?php if( get_field('logo') ): ?>
+                                    <img src="<?php the_field('logo'); ?>" />
+                                <?php endif; ?>
+                            </a>
+                        </div>
+
+                    <?php endwhile;
+                endif; wp_reset_query();
+
+            } elseif ( is_page('holodilnik') || '663' == $post->post_parent ) {
+
+                $queryArr = array(
+                    'post_type' => 'page',
+                    'post_parent' => 663,
+                    'posts_per_page' => -1,
+                    'meta_query' 		=> array(
+                        "template" 	=> array(
+                            "key" 	=> "_wp_page_template",
+                            "value" => "page-brand.php"
+                        ),
+                    ),
+                );
+                $stati_children = new WP_Query( $queryArr );
+                if($stati_children->have_posts()) :
+                    while($stati_children->have_posts()): $stati_children->the_post();?>
+                        <div class="mainBrands__item">
+                            <a href="<?= get_the_permalink() ?>">
+                                <?php if( get_field('logo') ): ?>
+                                    <img src="<?php the_field('logo'); ?>" />
+                                <?php endif; ?>
+                            </a>
+                        </div>
+
+                    <?php endwhile;
+                endif; wp_reset_query();
+
+            } elseif ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ) {
+
+                $queryArr = array(
+                    'post_type' => 'page',
+                    'post_parent' => 665,
+                    'posts_per_page' => -1,
+                    'meta_query' 		=> array(
+                        "template" 	=> array(
+                            "key" 	=> "_wp_page_template",
+                            "value" => "page-brand.php"
+                        ),
+                    ),
+                );
+                $stati_children = new WP_Query( $queryArr );
+                if($stati_children->have_posts()) :
+                    while($stati_children->have_posts()): $stati_children->the_post();?>
+                        <div class="mainBrands__item">
+                            <a href="<?= get_the_permalink() ?>">
+                                <?php if( get_field('logo') ): ?>
+                                    <img src="<?php the_field('logo'); ?>" />
+                                <?php endif; ?>
+                            </a>
+                        </div>
+
+                    <?php endwhile;
+                endif; wp_reset_query();
+
+            } elseif ( is_page('varochnaya-panel') || '667' == $post->post_parent ) {
+
+                $queryArr = array(
+                    'post_type' => 'page',
+                    'post_parent' => 667,
                     'posts_per_page' => -1,
                     'meta_query' 		=> array(
                         "template" 	=> array(
