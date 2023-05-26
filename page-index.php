@@ -15,7 +15,9 @@ get_header(); ?>
             <main class="main">
                 <div class="main__wrap">
 
-                    <?php get_template_part( 'template-parts/neispravnosti' ); ?>
+                    <?php 
+                        // get_template_part( 'template-parts/neispravnosti' ); 
+                    ?>
 
 
                     <?php get_template_part( 'template-parts/shema' ); ?>

@@ -49,6 +49,12 @@
                     </div>
                 </a>
             </div>
+
+
+            <? get_template_part('template-parts/sevises-main-card', null, ["name" => "Холодильник", "price" => "550", "img_name" => "holodilnik_1.png", "lnk" => "holodilnik" ] ) ?>
+            <? get_template_part('template-parts/sevises-main-card', null, ["name" => "Духовой шкаф", "price" => "550", "img_name" => "duh_1.png", "lnk" => "duhovoj-shkaf" ] ) ?>
+            <? get_template_part('template-parts/sevises-main-card', null, ["name" => "Варочная панель", "price" => "550", "img_name" => "varpanel_1.png", "lnk" => "varochnaya-panel" ] ) ?>
+            
         </div>
     </div>
 </section>

@@ -323,9 +323,9 @@ wp_body_open();
                 </div>
             </div>
 
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663", "lnk" => "holodilnik" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665", "lnk" => "duhovoj-shkaf" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667", "lnk" => "varochnaya-panel" ] ); ?>
             
             <div class="menu__item mobile__menu">
                 <a href="/prices" class="menu__link flex flex--aic flex--jcs">

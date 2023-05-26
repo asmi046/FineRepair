@@ -60,7 +60,7 @@
 		"send_index": "scp  -C index.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
 		"send_footer": "scp  -C footer.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
 		"send_one": "scp -C page-site-map.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_one1": "scp -C page-bt.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
+		"send_one1": "scp -C page-index.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
 		"send_carbon": "scp  -C -r inc u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
 		"send_carbon_fild": "scp  -C -r inc/custom-fields-options u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/inc/",
 		"send_parts": "scp  -C -r pars u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",

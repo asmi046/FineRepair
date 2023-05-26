@@ -1,5 +1,5 @@
 <div class="menu__item">
-    <a href="/remont-sushilnyh-mashin" class="menu__link flex flex--aic flex--jcs">
+    <a href="/<? echo $args['lnk']; ?>" class="menu__link flex flex--aic flex--jcs">
         <span class="menu__text"><? echo $args['name']; ?> </span>
     </a>
     <div class="menu__sub">
