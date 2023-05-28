@@ -894,6 +894,63 @@ input[type="radio"]:focus {
     padding: 20px 30px;
 }
 
+.footer__wrap__dop {
+    flex-direction: column;
+}
+
+.footer__wrap__dop h3{
+    margin-bottom: 20px;
+}
+
+.pay_m_wrap {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;   
+}
+
+.pay_logo {
+    display: flex;
+
+}
+
+.pay_logo div{ 
+    width: 80px;
+    margin: auto 20px auto 0;
+}
+
+.pay_logo div img{  
+    width:100%;
+    height: auto;
+}
+
+
+.foot_3_col {
+    display: flex;
+    margin: 20px 0;  
+    width: 100%; 
+    justify-content: space-between;
+}
+
+.foot_3_col > div{
+    flex:1;
+}
+
+.foot_3_col > div:last-child{ 
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    .foot_3_col {
+        flex-direction: column;
+    }
+
+    .foot_3_col > div:last-child{ 
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 800px) {
     .footer__wrap {
         padding: 30px 10px;

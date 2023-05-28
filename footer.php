@@ -58,6 +58,37 @@
             </div>
         </div>
     </div>
+
+    <div class="footer__wrap footer__wrap__dop wrap flex flex--aic flex--jcsb">
+        <div class="foot_3_col">
+            <div>
+                <h3>Мы ремонтируем</h3>
+                <a href="<?php echo get_the_permalink(19)?>">Стиральные машины</a><br>
+                <a href="<?php echo get_the_permalink(22)?>">Посудомоечные машины</a><br>
+                <a href="<?php echo get_the_permalink(21)?>">Сушильные машины</a><br>
+                <a href="<?php echo get_the_permalink(663)?>">Холодильники</a><br>
+                <a href="<?php echo get_the_permalink(665)?>">Духовые шкафы</a><br>
+                <a href="<?php echo get_the_permalink(667)?>">Варочные панели</a><br>
+            </div>
+            <div>
+                <p>Работаем без выходных с 9:00 до 22:00</p>
+                <p>Ходынская улица, 3с4</p>
+                <br>
+                <a href="<?php echo get_the_permalink(659)?>">Карта сацйта</a><br>
+            </div>
+        </div>
+        <div class="pay_m_wrap">
+            <h3>Способы оплаты</h3>   
+            <div class="pay_logo">
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mir.png" alt=""></div>    
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/maestro.png" alt=""></div>
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/visa.png" alt=""></div>
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mastercard.png" alt=""></div>
+            </div>
+        </div>
+        
+    </div>
+
     <div class="footer__info">
         <div class="wrap">
             Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ.
