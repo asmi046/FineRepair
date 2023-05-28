@@ -4,9 +4,16 @@
 
             <?php 
                 $bt_name = "";
+
+                if ( is_page('remont-stiralnyh-mashin') || '19' == $post->post_parent ) $bt_name = "стиральную машину";
+                if ( is_page('remont-sushilnyh-mashin') || '21' == $post->post_parent ) $bt_name = "сушильную машину";
+                if ( is_page('remont-posudomoechnyh-mashin') || '22' == $post->post_parent ) $bt_name = "посудомоечную машину";
+                if ( is_page('holodilnik') || '663' == $post->post_parent ) $bt_name = "холодильник"; 
+                if ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ) $bt_name = "духовой шкаф";
+                if ( is_page('varochnaya-panel') || '667' == $post->post_parent ) $bt_name = "варочную панель"; 
             ?>
 
-            <h2 class="Title__text">Починим бытовую технику <span>любого бренда</span></h2>
+            <h2 class="Title__text">Починим <?php echo $bt_name?> <span>любого бренда</span></h2>
             <span>Любая модель по плечу!</span>
         </div>
         <div class="mainBrands__list flex flex--aic flex--jcs">

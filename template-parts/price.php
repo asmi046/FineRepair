@@ -3,14 +3,90 @@
             <?php
             global $post;     // Если за пределами цикла
 
-            if ( is_page('19') || is_page('19') && $post->post_parent ) {
+            
+            if ( is_page('667') || is_page('667') && $post->post_parent ) {
+                $rows = get_field('czeny_vp', 'options');
+                if($rows) { ?>
+            <div class="main__prices">
+                <section class="mainPrices">
+                    <div class="mainPrices__wrap">
+                        <div class="mainPrices__title Title">
+                            <h2 class="Title__text">Цены на ремонт<span>варочных панелей</span></h2>
+                            <span>У нас демократичные цены и высокое качество</span>
+                        </div>
+                    <div class="mainPrices__table">
+                        <table class="mainPrices__list">
+                            <?php foreach($rows as $row)
+                            {
+                                echo '<tr>';
+                                echo '<td>' . $row['usluga'] . '</td>';
+                                echo '<td>' . $row['stoimost'] . '</td>';
+                                echo '</tr>';
+                            } ?>
+                        </table>
+                    </div>
+                    </div>
+                </section>
+            </div>
+                <?php }
+            } elseif ( is_page('665') || is_page('665') && $post->post_parent ) {
+                $rows = get_field('czeny_ds', 'options');
+                if($rows) { ?>
+            <div class="main__prices">
+                <section class="mainPrices">
+                    <div class="mainPrices__wrap">
+                        <div class="mainPrices__title Title">
+                            <h2 class="Title__text">Цены на ремонт<span>духовых шкафов</span></h2>
+                            <span>У нас демократичные цены и высокое качество</span>
+                        </div>
+                    <div class="mainPrices__table">
+                        <table class="mainPrices__list">
+                            <?php foreach($rows as $row)
+                            {
+                                echo '<tr>';
+                                echo '<td>' . $row['usluga'] . '</td>';
+                                echo '<td>' . $row['stoimost'] . '</td>';
+                                echo '</tr>';
+                            } ?>
+                        </table>
+                    </div>
+                    </div>
+                </section>
+            </div>
+                <?php }
+            } elseif ( is_page('663') || is_page('663') && $post->post_parent ) {
+                $rows = get_field('czeny_hol', 'options');
+                if($rows) { ?>
+            <div class="main__prices">
+                <section class="mainPrices">
+                    <div class="mainPrices__wrap">
+                        <div class="mainPrices__title Title">
+                            <h2 class="Title__text">Цены на ремонт<span>холодильников</span></h2>
+                            <span>У нас демократичные цены и высокое качество</span>
+                        </div>
+                    <div class="mainPrices__table">
+                        <table class="mainPrices__list">
+                            <?php foreach($rows as $row)
+                            {
+                                echo '<tr>';
+                                echo '<td>' . $row['usluga'] . '</td>';
+                                echo '<td>' . $row['stoimost'] . '</td>';
+                                echo '</tr>';
+                            } ?>
+                        </table>
+                    </div>
+                    </div>
+                </section>
+            </div>
+                <?php }
+            } elseif ( is_page('19') || is_page('19') && $post->post_parent ) {
                 $rows = get_field('czeny', 'options');
                 if($rows) { ?>
             <div class="main__prices">
                 <section class="mainPrices">
                     <div class="mainPrices__wrap">
                         <div class="mainPrices__title Title">
-                            <h2 class="Title__text">Цены на <span>услуги</span></h2>
+                            <h2 class="Title__text">Цены на ремонт <span>стиральных машин</span></h2>
                             <span>У нас демократичные цены и высокое качество</span>
                         </div>
                     <div class="mainPrices__table">
@@ -36,7 +112,7 @@
                         <section class="mainPrices">
                             <div class="mainPrices__wrap">
                                 <div class="mainPrices__title Title">
-                                    <h2 class="Title__text">Цены на <span>услуги</span></h2>
+                                    <h2 class="Title__text">Цены на ремонт <span>посудомоечных машин</span></h2>
                                     <span>У нас демократичные цены и высокое качество</span>
                                 </div>
                                 <div class="mainPrices__table">
@@ -63,7 +139,7 @@
                         <section class="mainPrices">
                             <div class="mainPrices__wrap">
                                 <div class="mainPrices__title Title">
-                                    <h2 class="Title__text">Цены на <span>услуги</span></h2>
+                                    <h2 class="Title__text">Цены на ремонт <span>стиральных машин</span></h2>
                                     <span>У нас демократичные цены и высокое качество</span>
                                 </div>
                                 <div class="mainPrices__table">
