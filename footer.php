@@ -20,7 +20,7 @@
             </a>
         </div>
         <div class="footer__nav">
-            <div class="footerNav flex flex--aic flex--jcs">
+            <!-- <div class="footerNav flex flex--aic flex--jcs">
                 <div class="footerNav__item">
                     <a href="/prices/" class="footerNav__link ">Цены</a>
                 </div>
@@ -30,16 +30,14 @@
                 <div class="footerNav__item">
                     <a href="/about/" class="footerNav__link ">О компании</a>
                 </div>
-                <!-- <div class="footerNav__item">
-                    <a href="/services/" class="footerNav__link ">Услуги</a>
-                </div> -->
+
                 <div class="footerNav__item">
                     <a href="/reviews/" class="footerNav__link ">Отзывы</a>
                 </div>
                 <div class="footerNav__item">
                     <a href="/contacts/" class="footerNav__link ">Контакты</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         
         <!-- <div class="footer__covid">
@@ -64,6 +62,15 @@
     <div class="footer__wrap footer__wrap__dop wrap flex flex--aic flex--jcsb">
         <div class="foot_3_col">
             <div>
+                <h3>Клиентам</h3>
+                <a href="/prices/">Цены</a><br>
+                <a href="/sales/" >Акции</a><br>
+                <a href="/about/" >О компании</a><br>
+                <a href="/reviews/" >Отзывы</a><br>
+                <a href="/contacts/">Контакты</a><br>
+            </div>
+
+            <div>
                 <h3>Мы ремонтируем</h3>
                 <a href="<?php echo get_the_permalink(19)?>">Стиральные машины</a><br>
                 <a href="<?php echo get_the_permalink(22)?>">Посудомоечные машины</a><br>
@@ -72,22 +79,22 @@
                 <a href="<?php echo get_the_permalink(665)?>">Духовые шкафы</a><br>
                 <a href="<?php echo get_the_permalink(667)?>">Варочные панели</a><br>
             </div>
-            <div>
-                <h3>Способы оплаты</h3>   
-                <div class="pay_logo">
-                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mir.png" alt=""></div>    
-                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/maestro.png" alt=""></div>
-                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/visa.png" alt=""></div>
-                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mastercard.png" alt=""></div>
-                </div>
-            </div>
-            <div>
-                <span class="map_pin">Работаем без выходных с 9:00 до 22:00</span>
-                <span class="time_work">Ходынская улица, 3с4</span>
+            
+
+            
+            <div >
+                <span class="time_work">Работаем без выходных с 9:00 до 22:00</span><br/><br/>
+                <span class="map_pin">Ходынская улица, 3с4</span>
             </div>
         </div>
         <div class="pay_m_wrap">
-            
+            <h3>Способы оплаты</h3>   
+            <div class="pay_logo">
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mir.png" alt=""></div>    
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/maestro.png" alt=""></div>
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/visa.png" alt=""></div>
+                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mastercard.png" alt=""></div>
+            </div>
         </div>
         
     </div>

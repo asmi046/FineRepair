@@ -913,6 +913,7 @@ input[type="radio"]:focus {
 
 .footer__wrap__dop {
     flex-direction: column;
+    padding-top: 0;
 }
 
 .footer__wrap__dop h3{

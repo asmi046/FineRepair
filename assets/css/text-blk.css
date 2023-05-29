@@ -38,6 +38,23 @@
     list-style: none;
 }
 
+.mainText ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+  ol li {
+    margin: 5px 0;
+    counter-increment: my-awesome-counter;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: #f0a366;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+
 
 .mainText ul li{
     margin: 5px 0;
