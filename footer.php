@@ -41,7 +41,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer__covid">
+        
+        <!-- <div class="footer__covid">
             <div class="footerCovid">
                 <div class="footerCovid__icon"></div>
                 <div class="footerCovid__text">
@@ -51,7 +52,8 @@
                     <p>Наша задача сделать так, чтобы <b>вы были спокойны</b> не только за свою технику, но и <b>за свое здоровье</b>.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <div class="footer__phone">
             <div class="footerPhone">
                 <a href="tel:<?php the_field('telefon', 'options'); ?>" class="footerPhone__link"><?php the_field('telefon', 'options'); ?></a>
@@ -71,20 +73,21 @@
                 <a href="<?php echo get_the_permalink(667)?>">Варочные панели</a><br>
             </div>
             <div>
-                <p>Работаем без выходных с 9:00 до 22:00</p>
-                <p>Ходынская улица, 3с4</p>
-                <br>
-                <a href="<?php echo get_the_permalink(659)?>">Карта сацйта</a><br>
+                <h3>Способы оплаты</h3>   
+                <div class="pay_logo">
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mir.png" alt=""></div>    
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/maestro.png" alt=""></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/visa.png" alt=""></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mastercard.png" alt=""></div>
+                </div>
+            </div>
+            <div>
+                <span class="map_pin">Работаем без выходных с 9:00 до 22:00</span>
+                <span class="time_work">Ходынская улица, 3с4</span>
             </div>
         </div>
         <div class="pay_m_wrap">
-            <h3>Способы оплаты</h3>   
-            <div class="pay_logo">
-                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mir.png" alt=""></div>    
-                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/maestro.png" alt=""></div>
-                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/visa.png" alt=""></div>
-                <div><img src="<?php echo get_template_directory_uri(); ?>/images/paym/mastercard.png" alt=""></div>
-            </div>
+            
         </div>
         
     </div>
@@ -93,6 +96,8 @@
         <div class="wrap">
             Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ.
             <br><?php the_field('yur_liczo', 'options'); ?> ОГРН <?php the_field('ogrn', 'options'); ?> ИНН/КПП  <?php the_field('inn', 'options'); ?>/<?php the_field('kpp', 'options'); ?>
+            <br>
+            <a href="<?php echo get_the_permalink(659)?>">Карта сайта</a><br>
         </div>
     </div>
 </footer>

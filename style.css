@@ -297,6 +297,7 @@ input[type="radio"]:focus {
     margin: 0px auto;
 }
 
+.time_work,
 .map_pin {
     position: relative;
     padding-left: 25px!important;
@@ -310,6 +311,17 @@ input[type="radio"]:focus {
     left: 0;
     top: calc(50% - 10px);
     background: url(images/pin.svg);
+}
+
+
+.time_work::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    background: url(images/time_work.svg);
 }
 
 @media (max-width: 1180px) {
@@ -722,6 +734,7 @@ input[type="radio"]:focus {
     }
 }
 
+.mainPrices__list a,
 .headerNav__link {
     display: block;
     font-size: 16px;
@@ -730,9 +743,13 @@ input[type="radio"]:focus {
     font-family: "Jost", sans-serif;
     color: #212121;
 }
-
+.mainPrices__list a:hover,
 .headerNav__link:hover, .headerNav__link.active {
     color: #4bb4f5;
+}
+
+.mainPrices__list a {
+    font-size: 14px;
 }
 
 .headerCovid {
@@ -4329,7 +4346,7 @@ input[type="radio"]:focus {
 
 .mainPrices__list tr td {
     border-bottom: 1px solid #c4c4c4;
-    padding: 14px 0px;
+    padding: 10px 0px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
@@ -6065,12 +6082,17 @@ input[type="radio"]:focus {
     margin-bottom: 36px;
 }
 
+.mainText h2,
 .Title__text {
     display: block;
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
+}
+
+.mainText h2{
+    margin-bottom: 36px;
 }
 
 @media (max-width: 1200px) {

@@ -14,7 +14,6 @@
 
         <div class="mainMalfunctions__title Title">
             <h2 class="Title__text">Частые неисправности <span><?php echo $bt_name ?></span></h2>
-            <span>Мы знаем как их решить</span>
         </div>
         <ul class="mainMalfunctions__list mainMalfunctions__list--hidden flex flex--aic flex--jcs">
 

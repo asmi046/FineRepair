@@ -14,7 +14,6 @@
             ?>
 
             <h2 class="Title__text">Починим <?php echo $bt_name?> <span>любого бренда</span></h2>
-            <span>Любая модель по плечу!</span>
         </div>
         <div class="mainBrands__list flex flex--aic flex--jcs">
             <?php
