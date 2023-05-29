@@ -51,7 +51,7 @@
     content: counter(my-awesome-counter) ". ";
     color: #f0a366;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   
 
