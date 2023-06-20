@@ -3692,9 +3692,6 @@ input[type="radio"]:focus {
     }
 }
 
-.mainMalfunctions__item--big {
-    font-size: 19px !important;
-}
 
 @media (max-width: 650px) {
     .mainMalfunctions__item--big {
