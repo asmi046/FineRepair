@@ -102,7 +102,7 @@ wp_body_open();
         <div class="topLine__sale">
             <span>Скидка</span>
             <b>30%</b>
-            <span>На заказ с 10.00 до 21.00</span>
+            <span>На заказ с 10.00 до 20.00</span>
         </div>
         <div class="topLine__worktime"><?php the_field('vremya_raboty', 'options'); ?> <span> </span> БЕЗ ВЫХОДНЫХ</div>
         <!-- <div class="topLine__worktime">Работаем без выходных</div> -->
@@ -127,7 +127,7 @@ wp_body_open();
                 <ul class="topLineForm__list flex flex--aic flex--jcs">
                     <li>Выезд мастера <b>за 30 минут</b></li>
                     <li><b>Бесплатная</b> диагностика</li>
-                    <li>Официальная <b>гарантии 1 год</b></li>
+                    <li>Официальная <b>гарантия 1 год</b></li>
                 </ul>
             </form>
         </div>
@@ -292,7 +292,7 @@ wp_body_open();
                 </div>
             </div>
             <div class="menu__item">
-                <a href="/remont-sushilnyh-mashin" class="menu__link flex flex--aic flex--jcs">
+                <a href="/remont-sushilnyh-mashin/" class="menu__link flex flex--aic flex--jcs">
                     <span class="menu__text">Сушильная машина</span>
                 </a>
                 <div class="menu__sub">
@@ -323,9 +323,9 @@ wp_body_open();
                 </div>
             </div>
 
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663", "lnk" => "holodilnik" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665", "lnk" => "duhovoj-shkaf" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667", "lnk" => "varochnaya-panel" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663", "lnk" => "remont-holodilnikov/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665", "lnk" => "remont-duhovyh-shkafov/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667", "lnk" => "remont-varochnyh-panelej/" ] ); ?>
             
             <div class="menu__item mobile__menu">
                 <a href="/prices" class="menu__link flex flex--aic flex--jcs">

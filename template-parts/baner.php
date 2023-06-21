@@ -5,8 +5,7 @@
                 <div class="slide slide--1">
                     <div class="slide__wrap wrap flex flex--aic flex--jcs">
                         <div class="slide__left">
-                            <h2 class="slide__title">Ремонт <br>бытовой техники
-                            </h2>
+                            <h1 class="slide__title">Ремонт <br>бытовой техники</h2>
                             <ul class="slide__list">
                                 <li class="slide__item">Выезд мастера <b>за 30 минут</b></li>
                                 <li class="slide__item">Бесплатная диагностика</li>

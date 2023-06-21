@@ -53,6 +53,7 @@
 
             
             <div>
+
                 <div class="footer__phone">
                     <div class="footerPhone">
                         <a href="tel:<?php the_field('telefon', 'options'); ?>" class="footerPhone__link"><?php the_field('telefon', 'options'); ?></a>
@@ -83,6 +84,12 @@
             <a href="<?php echo get_the_permalink(659)?>">Карта сайта</a><br>
         </div>
     </div>
+
+<?php
+$post_thumbnail_id = get_post_thumbnail_id($post);
+echo "<script>console.log('post_thumbnail_id: {$post_thumbnail_id}' );</script>";
+?>
+	
 </footer>
 
 		<?php wp_footer(); ?>

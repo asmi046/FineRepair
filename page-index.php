@@ -18,6 +18,9 @@ get_header(); ?>
                     <?php 
                         // get_template_part( 'template-parts/neispravnosti' ); 
                     ?>
+					
+					
+					<?php get_template_part( 'template-parts/text-blk' ); ?>
 
 
                     <?php get_template_part( 'template-parts/shema' ); ?>

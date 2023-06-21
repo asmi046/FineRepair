@@ -50,26 +50,6 @@
 		"build:vendor-prefixes-esc": "postcss -r --no-map assets/css/editor-style-classic.css",
 		"lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
 		"lint:js": "wp-scripts lint-js 'assets/**/*.js'",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
-
-		"clear_r": "ssh u1596462@31.31.196.165 \"rm  /www/fine-repair.ru/wp-content/themes/twentytwenty/*.*\"",
-		"send_r": "scp  -C *.php *.png *.css u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_ms": "scp  -C *.css u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_head": "scp  -C header.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_func": "scp  -C functions.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_index": "scp  -C index.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_footer": "scp  -C footer.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_one": "scp -C page-site-map.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_one1": "scp -C page-index.php u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_carbon": "scp  -C -r inc u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_carbon_fild": "scp  -C -r inc/custom-fields-options u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/inc/",
-		"send_parts": "scp  -C -r pars u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_part": "scp  -C -r template-parts u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_img": "scp  -r images u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_images": "scp  -r images *.svg u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_js": "scp -r js u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_css": "scp -C -r assets/css u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/assets/",
-		"send_fonts": "scp -C -r fonts u1596462@31.31.196.165:www/fine-repair.ru/wp-content/themes/twentytwenty/",
-		"send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_image & npm run send_js & npm run send_fonts"
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
 	}
 }

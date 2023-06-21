@@ -8,9 +8,9 @@
                 if ( is_page('remont-stiralnyh-mashin') || '19' == $post->post_parent ) $bt_name = "стиральную машину";
                 if ( is_page('remont-sushilnyh-mashin') || '21' == $post->post_parent ) $bt_name = "сушильную машину";
                 if ( is_page('remont-posudomoechnyh-mashin') || '22' == $post->post_parent ) $bt_name = "посудомоечную машину";
-                if ( is_page('holodilnik') || '663' == $post->post_parent ) $bt_name = "холодильник"; 
-                if ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ) $bt_name = "духовой шкаф";
-                if ( is_page('varochnaya-panel') || '667' == $post->post_parent ) $bt_name = "варочную панель"; 
+                if ( is_page('remont-holodilnikov') || '663' == $post->post_parent ) $bt_name = "холодильник"; 
+                if ( is_page('remont-duhovyh-shkafov') || '665' == $post->post_parent ) $bt_name = "духовой шкаф";
+                if ( is_page('remont-varochnyh-panelej') || '667' == $post->post_parent ) $bt_name = "варочную панель"; 
             ?>
 
             <h2 class="Title__text">Починим <?php echo $bt_name?> <span>любого бренда</span></h2>
@@ -34,13 +34,13 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+						<?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
@@ -61,13 +61,13 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
@@ -88,18 +88,18 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('holodilnik') || '663' == $post->post_parent ) {
+            } elseif ( is_page('remont-holodilnikov') || '663' == $post->post_parent ) {
 
                 $queryArr = array(
                     'post_type' => 'page',
@@ -115,18 +115,18 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ) {
+            } elseif ( is_page('remont-duhovyh-shkafov') || '665' == $post->post_parent ) {
 
                 $queryArr = array(
                     'post_type' => 'page',
@@ -142,18 +142,18 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('varochnaya-panel') || '667' == $post->post_parent ) {
+            } elseif ( is_page('remont-varochnyh-panelej') || '667' == $post->post_parent ) {
 
                 $queryArr = array(
                     'post_type' => 'page',
@@ -169,13 +169,13 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();
@@ -196,13 +196,13 @@
                 $stati_children = new WP_Query( $queryArr );
                 if($stati_children->have_posts()) :
                     while($stati_children->have_posts()): $stati_children->the_post();?>
-                        <div class="mainBrands__item">
-                            <a href="<?= get_the_permalink() ?>">
-                                <?php if( get_field('logo') ): ?>
-                                    <img src="<?php the_field('logo'); ?>" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
+                        <?php if( get_field('logo') ): ?>
+							<div class="mainBrands__item">
+								<a href="<?= get_the_permalink() ?>">
+										<img src="<?php the_field('logo'); ?>" />
+								</a>
+							</div>
+						<?php endif; ?>
 
                     <?php endwhile;
                 endif; wp_reset_query();

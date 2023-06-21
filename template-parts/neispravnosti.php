@@ -7,9 +7,9 @@
             if ( is_page('remont-stiralnyh-mashin') || '19' == $post->post_parent ) $bt_name = "стиральных машин";
             if ( is_page('remont-sushilnyh-mashin') || '21' == $post->post_parent ) $bt_name = "сушильных машин";
             if ( is_page('remont-posudomoechnyh-mashin') || '22' == $post->post_parent ) $bt_name = "посудомоечных машин";
-            if ( is_page('holodilnik') || '663' == $post->post_parent ) $bt_name = "холодильников"; 
-            if ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ) $bt_name = "духовых шкафов";
-            if ( is_page('varochnaya-panel') || '667' == $post->post_parent ) $bt_name = "варочных панелей"; 
+            if ( is_page('remont-holodilnikov') || '663' == $post->post_parent ) $bt_name = "холодильников"; 
+            if ( is_page('remont-duhovyh-shkafov') || '665' == $post->post_parent ) $bt_name = "духовых шкафов";
+            if ( is_page('remont-varochnyh-panelej') || '667' == $post->post_parent ) $bt_name = "варочных панелей"; 
         ?>
 
         <div class="mainMalfunctions__title Title">
@@ -89,7 +89,7 @@
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('holodilnik') || '663' == $post->post_parent ){
+            } elseif ( is_page('remont-holodilnikov') || '663' == $post->post_parent ){
 
                 $queryArr = array(
                     'post_type' => 'page',
@@ -112,7 +112,7 @@
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('duhovoj-shkaf') || '665' == $post->post_parent ){
+            } elseif ( is_page('remont-duhovyh-shkafov') || '665' == $post->post_parent ){
 
                 $queryArr = array(
                     'post_type' => 'page',
@@ -135,7 +135,7 @@
                     <?php endwhile;
                 endif; wp_reset_query();
 
-            } elseif ( is_page('varochnaya-panel') || '667' == $post->post_parent ) {
+            } elseif ( is_page('remont-varochnyh-panelej') || '667' == $post->post_parent ) {
 
                 $queryArr = array(
                     'post_type' => 'page',

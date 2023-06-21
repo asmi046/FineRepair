@@ -1,5 +1,3 @@
-
-
             <?php
             global $post;     // Если за пределами цикла
 
@@ -11,8 +9,7 @@
                 <section class="mainPrices">
                     <div class="mainPrices__wrap">
                         <div class="mainPrices__title Title">
-                            <h2 class="Title__text">Цены на ремонт<span>варочных панелей</span></h2>
-                            <span>Низкие цены и высокое качество</span>
+                            <h2 class="Title__text">Цены на ремонт <span>варочных панелей</span></h2>
                         </div>
                     <div class="mainPrices__table">
                         <table class="mainPrices__list">
@@ -36,8 +33,7 @@
                 <section class="mainPrices">
                     <div class="mainPrices__wrap">
                         <div class="mainPrices__title Title">
-                            <h2 class="Title__text">Цены на ремонт<span>духовых шкафов</span></h2>
-                            <span>Низкие цены и высокое качество</span>
+                            <h2 class="Title__text">Цены на ремонт <span>духовых шкафов</span></h2>
                         </div>
                     <div class="mainPrices__table">
                         <table class="mainPrices__list">
@@ -61,8 +57,7 @@
                 <section class="mainPrices">
                     <div class="mainPrices__wrap">
                         <div class="mainPrices__title Title">
-                            <h2 class="Title__text">Цены на ремонт<span>холодильников</span></h2>
-                            <span>Низкие цены и высокое качество</span>
+                            <h2 class="Title__text">Цены на ремонт <span>холодильников</span></h2>
                         </div>
                     <div class="mainPrices__table">
                         <table class="mainPrices__list">
@@ -87,7 +82,6 @@
                     <div class="mainPrices__wrap">
                         <div class="mainPrices__title Title">
                             <h2 class="Title__text">Цены на ремонт <span>стиральных машин</span></h2>
-                            <span>Низкие цены и высокое качество</span>
                         </div>
                     <div class="mainPrices__table">
                         <table class="mainPrices__list">
@@ -113,7 +107,6 @@
                             <div class="mainPrices__wrap">
                                 <div class="mainPrices__title Title">
                                     <h2 class="Title__text">Цены на ремонт <span>посудомоечных машин</span></h2>
-                                    <span>Низкие цены и высокое качество</span>
                                 </div>
                                 <div class="mainPrices__table">
                                     <table class="mainPrices__list">
@@ -140,7 +133,6 @@
                             <div class="mainPrices__wrap">
                                 <div class="mainPrices__title Title">
                                     <h2 class="Title__text">Цены на ремонт <span>стиральных машин</span></h2>
-                                    <span>Низкие цены и высокое качество</span>
                                 </div>
                                 <div class="mainPrices__table">
                                     <table class="mainPrices__list">
@@ -241,7 +233,7 @@
                                         <section class="mainPrices">
                                             <div class="mainPrices__wrap">
                                                 <div class="mainPrices__title Title">
-                                                    <h3>Ремонт сушильных машин</h3>
+                                                    <h3>Ремонт холодильников</h3>
                                                 </div>
                                                 <div class="mainPrices__table">
                                                     <table class="mainPrices__list">
@@ -267,7 +259,7 @@
                                         <section class="mainPrices">
                                             <div class="mainPrices__wrap">
                                                 <div class="mainPrices__title Title">
-                                                    <h3>Ремонт сушильных машин</h3>
+                                                    <h3>Ремонт духовых шкафов</h3>
                                                 </div>
                                                 <div class="mainPrices__table">
                                                     <table class="mainPrices__list">
@@ -292,7 +284,7 @@
                                         <section class="mainPrices">
                                             <div class="mainPrices__wrap">
                                                 <div class="mainPrices__title Title">
-                                                    <h3>Ремонт сушильных машин</h3>
+                                                    <h3>Ремонт варочных панелей</h3>
                                                 </div>
                                                 <div class="mainPrices__table">
                                                     <table class="mainPrices__list">

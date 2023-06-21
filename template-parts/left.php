@@ -2,7 +2,7 @@
     <aside class="LeftSide flex flex--ais flex--jcs flex--fdc">
         <div class="LeftSide__sale">
             <div class="LeftSideSale">
-                <div class="LeftSideSale__title"><span>Скидка <b>30%</b></span> <small>при заказе</small> <small>с 10.00 до 19.00</small></div>
+                <div class="LeftSideSale__title"><span>Скидка <b>30%</b></span> <small>при заказе</small> <small>с 10.00 до 20.00</small></div>
                 <div class="LeftSideSale__text">
                     Оставьте заявку <span>Прямо сейчас!</span>
                 </div>

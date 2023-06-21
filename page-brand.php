@@ -12,9 +12,9 @@ get_header(); ?>
             <main class="main">
                 <div class="main__wrap">
 
-                    <?php get_template_part( 'template-parts/polomki' ); ?>
-
                     <?php get_template_part( 'template-parts/price' ); ?>
+					
+					<?php get_template_part( 'template-parts/text-blk' ); ?>
 
                     <?php get_template_part( 'template-parts/rek' ); ?>
 
@@ -25,7 +25,6 @@ get_header(); ?>
                     <?php get_template_part( 'template-parts/shema' ); ?>
 
                     <?php get_template_part( 'template-parts/reviews' ); ?>
-
 
                     <?php get_template_part( 'template-parts/questions' ); ?>
 
