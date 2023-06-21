@@ -3575,7 +3575,7 @@ input[type="radio"]:focus {
     }
 }
 
-.mainMalfunctions > ul > li > a {
+/* .mainMalfunctions > ul > li > a {
     -webkit-text-decoration: underline 1px solid;
     text-decoration: underline 1px solid;
     -webkit-transition: all ease 0.3s;
@@ -3585,7 +3585,7 @@ input[type="radio"]:focus {
 .mainMalfunctions > ul > li > a:hover {
     -webkit-text-decoration: rgba(0, 0, 0, 0);
     text-decoration: rgba(0, 0, 0, 0);
-}
+} */
 
 .mainMalfunctions > ul > li::before {
     content: "";
@@ -3700,16 +3700,14 @@ input[type="radio"]:focus {
 }
 
 .mainMalfunctions__item > a {
-    text-decoration: none !important;
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s;
     line-height: 1;
-    border-bottom: 1px solid #212121;
+    text-decoration: underline 0.5px;
     display: inline-block;
 }
 
 .mainMalfunctions__item > a:hover {
-    border-bottom: 1px solid rgba(33, 33, 33, 0);
     color: #4bb4f5;
 }
 

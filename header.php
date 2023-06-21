@@ -229,103 +229,15 @@ wp_body_open();
             </div> -->
 
 
-            <div class="menu__item">
-                <a href="/remont-stiralnyh-mashin/" class="menu__link flex flex--aic flex--jcs">
-                    <span class="menu__text">Стиральная машина</span>
-                </a>
-                <div class="menu__sub">
-                    <ul id="stir" class="menuSub">
-                        <?php
-                        global $post;
-                        $queryArr = array(
-                            'post_type' => 'any',
-                            'post_parent' => 19,
-                            'order' => 'ASC',
-                            'posts_per_page' => -1,
-                            'meta_query' 		=> array(
-                                "template" 	=> array(
-                                    "key" 	=> "_wp_page_template",
-                                    "value" => "page-usl.php"
-                                ),
-                            ),
-                        );
-                        $stati_children = new WP_Query( $queryArr );
-                        if($stati_children->have_posts()) :
-                        while($stati_children->have_posts()): $stati_children->the_post();?>
-                            <li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-266">
-                                <a href="<?= get_the_permalink() ?>"><?= get_the_title() ?></a>
-                            </li>
-                        <?php endwhile;
-                endif; wp_reset_query(); ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu__item">
-                <a href="/remont-posudomoechnyh-mashin/" class="menu__link flex flex--aic flex--jcs">
-                    <span class="menu__text">Посудомоечная машина</span>
-                </a>
-                <div class="menu__sub">
-                    <ul id="stir" class="menuSub">
-                        <?php
-                        global $post;
-                        $queryArr = array(
-                            'post_type' => 'any',
-                            'post_parent' => 22,
-                            'order' => 'ASC',
-                            'posts_per_page' => -1,
-                            'meta_query' 		=> array(
-                                "template" 	=> array(
-                                    "key" 	=> "_wp_page_template",
-                                    "value" => "page-usl.php"
-                                ),
-                            ),
-                        );
-                        $stati_children = new WP_Query( $queryArr );
-                        if($stati_children->have_posts()) :
-                            while($stati_children->have_posts()): $stati_children->the_post();?>
-                                <li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-266">
-                                    <a href="<?= get_the_permalink() ?>"><?= get_the_title() ?></a>
-                                </li>
-                            <?php endwhile;
-                        endif; wp_reset_query(); ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu__item">
-                <a href="/remont-sushilnyh-mashin/" class="menu__link flex flex--aic flex--jcs">
-                    <span class="menu__text">Сушильная машина</span>
-                </a>
-                <div class="menu__sub">
-                    <ul id="stir" class="menuSub">
-                        <?php
-                        global $post;
-                        $queryArr = array(
-                            'post_type' => 'any',
-                            'post_parent' => 21,
-                            'order' => 'ASC',
-                            'posts_per_page' => -1,
-                            'meta_query' 		=> array(
-                                "template" 	=> array(
-                                    "key" 	=> "_wp_page_template",
-                                    "value" => "page-usl.php"
-                                ),
-                            ),
-                        );
-                        $stati_children = new WP_Query( $queryArr );
-                        if($stati_children->have_posts()) :
-                            while($stati_children->have_posts()): $stati_children->the_post();?>
-                                <li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-266">
-                                    <a href="<?= get_the_permalink() ?>"><?= get_the_title() ?></a>
-                                </li>
-                            <?php endwhile;
-                        endif; wp_reset_query(); ?>
-                    </ul>
-                </div>
-            </div>
 
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Холодильник", "p_id" => "663", "lnk" => "remont-holodilnikov/" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Духовой шкаф", "p_id" => "665", "lnk" => "remont-duhovyh-shkafov/" ] ); ?>
-            <?php get_template_part( 'template-parts/menu-item', null, ["name" => "Варочная панель", "p_id" => "667", "lnk" => "remont-varochnyh-panelej/" ] ); ?>
+
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "stiralki", "name" => "Стиральная машина", "p_id" => "19", "lnk" => "remont-stiralnyh-mashin/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "posudomoiki", "name" => "Посудомоечная машина", "p_id" => "22", "lnk" => "remont-posudomoechnyh-mashin/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "suhilki", "name" => "Сушильная машина", "p_id" => "21", "lnk" => "remont-sushilnyh-mashin/" ] ); ?>
+            
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "holodilnik", "name" => "Холодильник", "p_id" => "663", "lnk" => "remont-holodilnikov/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "duhovka", "name" => "Духовой шкаф", "p_id" => "665", "lnk" => "remont-duhovyh-shkafov/" ] ); ?>
+            <?php get_template_part( 'template-parts/menu-item', null, ["menu_id" => "panel", "name" => "Варочная панель", "p_id" => "667", "lnk" => "remont-varochnyh-panelej/" ] ); ?>
             
             <div class="menu__item mobile__menu">
                 <a href="/prices" class="menu__link flex flex--aic flex--jcs">

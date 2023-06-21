@@ -217,6 +217,12 @@ function twentytwenty_menus() {
 		'mobile'   => __( 'Mobile Menu', 'twentytwenty' ),
 		'footer'   => __( 'Footer Menu', 'twentytwenty' ),
 		'social'   => __( 'Social Menu', 'twentytwenty' ),
+        'stiralki' => "Миню стиральных машин",
+        'posudomoiki' => "Миню посудомоечных машин",
+        'suhilki' => "Миню сушильных машин",
+        'holodilnik' => "Миню холодильников",
+        'duhovka' => "Миню духовых шкафов",
+        'panel' => "Миню варочных панелей",
 	);
 
 	register_nav_menus( $locations );
